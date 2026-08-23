@@ -1,0 +1,54 @@
+/* Design tokens — 438 Bakes.
+   Warm paper, cocoa ink, crust-orange accent, honey highlight.
+   Imported once via style.css. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..800&family=Instrument+Sans:wght@400;500;600&display=swap');
+
+:root {
+  /* Surfaces & ink */
+  --paper: #fff8f0;
+  --surface: #ffffff;
+  --surface-alt: #faeee0;
+  --ink: #3b2a21;
+  --muted: #8a705f;
+  --line: #ecdcc8;
+
+  /* Accents */
+  --accent: #c4553b;
+  --accent-hover: #a8452e;
+  --accent-ink: #fff8f0;
+  --honey: #e8b86d;
+  /* Stays cream in both themes — for illustration fills. */
+  --cream: #fff3e4;
+
+  /* Type */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label: 'Instrument Sans', -apple-system, sans-serif;
+
+  /* Shape & rhythm */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --col-max: 74rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --shadow: 0 1px 2px rgb(59 42 33 / 5%), 0 8px 24px -12px rgb(59 42 33 / 18%);
+  --shadow-lift: 0 2px 4px rgb(59 42 33 / 6%), 0 18px 36px -16px rgb(59 42 33 / 28%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1b1310;
+    --surface: #241a16;
+    --surface-alt: #2c201a;
+    --ink: #f6eadd;
+    --muted: #b09884;
+    --line: #382720;
+
+    --accent: #e8825f;
+    --accent-hover: #f09a7b;
+    --accent-ink: #1b1310;
+    --honey: #e8b86d;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px -12px rgb(0 0 0 / 55%);
+    --shadow-lift: 0 2px 4px rgb(0 0 0 / 35%), 0 18px 36px -16px rgb(0 0 0 / 65%);
+  }
+}
