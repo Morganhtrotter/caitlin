@@ -17,8 +17,9 @@
   --accent-hover: #a8452e;
   --accent-ink: #fff8f0;
   --honey: #e8b86d;
-  /* Stays cream in both themes — for illustration fills. */
+  /* Stay fixed in both themes — for illustration fills. */
   --cream: #fff3e4;
+  --cocoa: #4a2e20;
 
   /* Type */
   --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;

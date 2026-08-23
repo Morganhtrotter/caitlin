@@ -4,7 +4,7 @@
       <div class="copy">
         <p class="eyebrow">Baked to order in the {{ site.area }}</p>
 
-        <h1>Small-batch bakes,<br />made the day you get them.</h1>
+        <h1>Sharing homemade desserts,<br />inspired by family recipes.</h1>
 
         <p class="lede">
           438 Bakes is Caitlin's home bakery — cookies, cakes, pastry and bread in small batches,
@@ -21,22 +21,28 @@
       <div class="art" aria-hidden="true">
         <svg viewBox="0 0 360 360">
           <circle cx="180" cy="176" r="164" fill="var(--surface-alt)" />
-          <ellipse cx="180" cy="288" rx="128" ry="15" fill="var(--ink)" opacity="0.09" />
-          <rect x="76" y="196" width="208" height="88" rx="10" fill="var(--honey)" />
-          <rect x="76" y="228" width="208" height="14" fill="var(--accent)" opacity="0.55" />
-          <rect x="108" y="124" width="144" height="74" rx="9" fill="var(--honey)" />
+          <ellipse cx="180" cy="292" rx="118" ry="14" fill="var(--cocoa)" opacity="0.16" />
+          <!-- Cookie body: hand-shaped edge rather than a perfect circle. -->
           <path
-            d="M108 133c0-5 4-9 9-9h126c5 0 9 4 9 9v9c-9 0-9 8-18 8s-9-8-18-8-9 8-18 8-9-8-18-8-9 8-18 8-9-8-18-8-9 8-18 8-9-8-18-8v-9z"
-            fill="var(--cream)"
+            d="M180 61C204.4 60.9 234.5 81.6 253.5 100.5C272.5 119.3 293.9 149.4 294 174C294.1 198.6 273.2 229.6 254.2 248.2C235.2 266.9 204.4 286.4 180 286C155.6 285.6 126.4 264.8 107.9 246.1C89.4 227.5 69.1 198.2 69 174C68.9 149.8 88.7 120 107.2 101.2C125.7 82.3 155.6 61.1 180 61Z"
+            fill="var(--honey)"
           />
-          <circle cx="180" cy="110" r="13" fill="var(--accent)" />
-          <path
-            d="M180 97c1-8 6-12 12-13"
-            stroke="var(--accent)"
-            stroke-width="3"
-            stroke-linecap="round"
-            fill="none"
-          />
+          <!-- Lighter centre leaves a toasted rim around the edge. -->
+          <circle cx="180" cy="174" r="92" fill="var(--cream)" opacity="0.22" />
+          <g fill="var(--cocoa)">
+            <circle cx="135" cy="134" r="15" />
+            <circle cx="205" cy="119" r="13" />
+            <circle cx="235" cy="179" r="16" />
+            <circle cx="160" cy="199" r="14" />
+            <circle cx="120" cy="204" r="11" />
+            <circle cx="190" cy="234" r="13" />
+            <circle cx="248" cy="222" r="10" />
+          </g>
+          <g fill="var(--honey)">
+            <circle cx="309" cy="271" r="6" />
+            <circle cx="325" cy="255" r="3.5" />
+            <circle cx="57" cy="264" r="4.5" />
+          </g>
         </svg>
       </div>
     </div>
