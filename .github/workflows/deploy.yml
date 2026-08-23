@@ -9,6 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Required so GITHUB_TOKEN can push the built site to the gh-pages branch.
+    # Repos default to read-only workflow permissions.
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
