@@ -3,7 +3,7 @@
     <div class="menu-head">
       <div>
         <p class="eyebrow">The menu</p>
-        <h2>This week's bakes</h2>
+        <h2>The bakes</h2>
         <p class="sub">
           Everything is made in small batches to order. Tap the items you want and they'll be
           waiting for you in the order form below.
