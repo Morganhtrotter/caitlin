@@ -7,8 +7,8 @@
         <h1>Sharing homemade desserts,<br />inspired by family recipes.</h1>
 
         <p class="lede">
-          438 Bakes is Caitlin's home bakery — cookies, cakes, pastry and bread in small batches,
-          using real butter and whatever fruit is best that week. Order what you like, pick it up
+          438 Bakes is Caitlin's home bakery — cookies and other desserts in small batches, using
+          real butter and two generations of love you can taste. Order what you like, pick it up
           warm.
         </p>
 
@@ -81,23 +81,18 @@
       </div>
     </div>
 
-    <ul class="trust section">
-      <li v-for="item in trust" :key="item">
-        {{ item }}
-      </li>
-    </ul>
+    <div class="trust-wrapper">
+      <ul class="trust section">
+        <li v-for="item in trust" :key="item">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
 <script setup>
-import { site } from '../data/site.js'
-
-const trust = [
-  'Baked fresh to order',
-  'Local pickup',
-  `${site.leadTime} notice`,
-  'Custom cakes welcome',
-]
+import { site, trust } from '../data/site.js'
 </script>
 
 <style scoped>
@@ -150,13 +145,19 @@ h1 {
   margin: 0;
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
-  border-top: 1px solid var(--line);
   font-family: var(--font-label);
+  max-width: var(--col-max);
+  margin: auto;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+  justify-content: space-between;
+}
+
+.trust-wrapper {
+  border-top: 1px solid var(--line);
 }
 
 .trust li {

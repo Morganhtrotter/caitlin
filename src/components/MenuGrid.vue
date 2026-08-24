@@ -42,6 +42,25 @@
             {{ item.description }}
           </p>
 
+          <details v-if="item.ingredients?.length" class="ingredients">
+            <summary>
+              Ingredients
+              <span class="count">{{ item.ingredients.length }}</span>
+            </summary>
+            <p class="ingredients-list">{{ item.ingredients.join(', ') }}</p>
+          </details>
+
+          <dl class="specs">
+            <div v-if="item.allergens?.length" class="spec allergens">
+              <dt>Contains</dt>
+              <dd>{{ item.allergens.join(', ') }}</dd>
+            </div>
+            <div v-if="item.netWeight" class="spec">
+              <dt>Net wt</dt>
+              <dd>{{ item.netWeight }}</dd>
+            </div>
+          </dl>
+
           <div class="foot">
             <p class="price">
               <strong>${{ item.price }}</strong>
@@ -240,6 +259,101 @@ h3 {
   color: var(--muted);
   font-size: 0.92rem;
   margin-top: 0.5rem;
+}
+
+.ingredients {
+  margin-top: 0.75rem;
+}
+
+.ingredients summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+  width: fit-content;
+}
+
+.ingredients summary::-webkit-details-marker {
+  display: none;
+}
+
+.ingredients summary::before {
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+
+.ingredients[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.ingredients summary:hover {
+  color: var(--accent);
+}
+
+.ingredients summary .count {
+  background: var(--surface-alt);
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+}
+
+.ingredients-list {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.specs {
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.spec {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.spec dt {
+  flex-shrink: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.spec dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.spec.allergens dt {
+  color: var(--accent);
+}
+
+.spec.allergens dd {
+  color: var(--ink);
+  font-weight: 500;
 }
 
 .foot {

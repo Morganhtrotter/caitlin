@@ -11,9 +11,15 @@ export const site = {
   instagram: '438bakes',
   instagramUrl: 'https://instagram.com/438bakes',
   area: 'San Francisco Bay Area',
-  leadTime: '72 hours',
   leadTimeDays: 3,
 }
+
+// Short reassurances shown under the hero.
+export const trust = [
+  'Baked fresh to order',
+  'Local pickup',
+  'Family Recipes',
+]
 
 export const menu = [
   {
@@ -22,10 +28,22 @@ export const menu = [
     category: 'Cookies',
     price: 20,
     unit: 'dozen',
-    description:
-      `My Grandma's classic Chocolate Chip Cookie recipe. Crisp at the edge, soft through the middle.`,
+    description: `My Grandma's classic Chocolate Chip Cookie recipe. Crisp at the edge, soft through the middle.`,
     tags: ['Best seller'],
     image: null,
+    ingredients: [
+      'Flour',
+      'Salt',
+      'Unsalted Butter',
+      'Brown sugar',
+      'Granulated sugar',
+      'Eggs',
+      'Vanilla extract',
+      'Baking soda',
+      'Semi-sweet chocolate chips',
+    ],
+    allergens: ['Wheat', 'Egg', 'Milk', 'Soy'],
+    netWeight: '1 lb 4 oz (570 g)',
   },
   {
     id: 'oatmeal-pecan-chocolate-chip',
@@ -33,10 +51,28 @@ export const menu = [
     category: 'Cookies',
     price: 25,
     unit: 'dozen',
-    description:
-      'A random request from my dad quickly turned into a family favorite.',
+    description: 'A random request from my dad quickly turned into a family favorite.',
     tags: [],
     image: null,
+    ingredients: [
+      'Flour',
+      'Rolled old fashioned oats',
+      'Unsalted butter',
+      'Brown sugar',
+      'Granulated sugar',
+      'Egg',
+      'Vanilla extract',
+      'Baking soda',
+      'Baking powder',
+      'Maple syrup',
+      'Cinnamon',
+      'Salt',
+      'Pecans',
+      'Nutmeg',
+      'Semi-sweet chocolate chips',
+    ],
+    allergens: ['Wheat', 'Egg', 'Milk', 'Soy', 'Tree nuts (pecans)'],
+    netWeight: '1 lb 6 oz (620 g)',
   },
   {
     id: 'pistachio-double-chocolate-chip',
@@ -44,10 +80,24 @@ export const menu = [
     category: 'Cookies',
     price: 30,
     unit: 'dozen',
-    description:
-      'A craving turned into our new favorite cookie.',
+    description: 'A craving turned into our new favorite cookie.',
     tags: ['New'],
     image: null,
+    ingredients: [
+      'Flour',
+      'Unsalted butter',
+      'Brown sugar',
+      'Granulated sugar',
+      'Eggs',
+      'Vanilla extract',
+      'Baking soda',
+      'Salt',
+      'Pistachios',
+      'White chocolate chips',
+      'Dark chocolate chips',
+    ],
+    allergens: ['Wheat', 'Egg', 'Milk', 'Soy', 'Tree nuts (pistachios)'],
+    netWeight: '1 lb 5 oz (595 g)',
   },
   {
     id: 'caramel-bar',
@@ -55,10 +105,23 @@ export const menu = [
     category: 'Dessert Bar',
     price: 54,
     unit: '9-inch x 11-inch',
-    description:
-      'They are as good as they sound. Enough said.',
+    description: 'They are as good as they sound. Enough said.',
     tags: ['Best Seller'],
     image: null,
+    ingredients: [
+      'Flour',
+      'Rolled old fashioned oats',
+      'Unsalted butter',
+      'Brown sugar',
+      'Eggs',
+      'Baking soda',
+      'Salt',
+      'Semi-sweet chocolate chips',
+      'Whipping cream',
+      `Werther's original chewy caramels`,
+    ],
+    allergens: ['Wheat', 'Egg', 'Milk', 'Soy'],
+    netWeight: '3 lb 8 oz (1.6 kg)',
   },
 ]
 
