@@ -2,13 +2,13 @@
 
 Caitlin's home bakery — Vue 3 + Vite, deployed to GitHub Pages.
 
-Live: **https://peterpaige.tv**
+Live: **https://Morganhtrotter.github.io/caitlin/**
 
 ## Local development
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173/
+npm run dev      # http://localhost:5173/caitlin/
 npm run build    # production build into dist/
 npm run preview  # serve the production build
 npm run lint     # eslint
